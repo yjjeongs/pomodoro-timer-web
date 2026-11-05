@@ -46,6 +46,17 @@ settingsBtn.onclick = () => {
   location.href = 'setting.html';
 };
 
+const clockEl = document.querySelector('.clock');
+
+function renderClock() {
+  clockEl.textContent = new Date().toLocaleTimeString('ko-KR', {
+    hour12: false,
+  });
+}
+
+renderClock();
+setInterval(renderClock, 1000);
+
 render();
 
 startBtn.onclick = startTimer;
