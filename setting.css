@@ -1,0 +1,44 @@
+.setting-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.setting-form label {
+  font-weight: 600;
+  color: #7a6a66;
+}
+
+.setting-form input {
+  width: 160px;
+  padding: 10px 16px;
+  border: 2px solid #f3c9c1;
+  border-radius: 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.setting-form input:focus {
+  outline: none;
+  border-color: #d64530;
+}
+
+.hint {
+  font-size: 0.875rem;
+  color: #7a6a66;
+}
+
+.hint.error {
+  color: #d64530;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: none;
+  transform: none;
+}
